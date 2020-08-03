@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet">
+    <title>Information</title>
+</head>
+<body>
+<div class="container">
+    <!-- Form welcome  -->
+    <div class="card-wrap">
+        <div class="card border-0 shadow card--welcome is-show" id="welcome">
+            <div class="card-body">
+                <h2 class="card-title">WELCOME</h2>
+                <p>Welcome to the login page</p>
+                <div class="btn-wrap"><a class="btn btn-lg btn-login-ad js-btn" data-target="login-ad">ADMIN</a></div>
+            </div>
+        </div>
+
+        <!-- Đăng nhập cho admin -->
+        <div class="card border-0 shadow card--login-ad" id="login-ad">
+            <div class="card-body">
+                <h2 class="card-title">Welcome Back!</h2>
+                <p>Please login with your personal info</p>
+                <form>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Email" required="required" type="email"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Password" required="required" type="password"/>
+                    </div>
+                    <p><a>Forgot your password?</a></p>
+                    <button class="btn btn-lg">LOGIN</button>
+                </form>
+            </div>
+            <button class="btn btn-back js-btn" data-target="welcome"><i class="fas fa-angle-left"></i></button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script src="./static/script/login.js"></script>
+</html>
